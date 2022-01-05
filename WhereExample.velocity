@@ -1,0 +1,4 @@
+#set($code = $object.code)
+#set($where = $Finder.where())
+#set($trash = $where.addEquals('location', $code))
+#set($cases = $DomainObject.find($metadataTool.entityClass('case'), $where))
