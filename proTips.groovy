@@ -21,3 +21,5 @@ for(id in ids){
   }
 }
 
+//Sort by two fields on an object
+cse.subCases.sort{a, b -> a.subCaseType <=> b.subCaseType ?: a.dateCreated <=> b.dateCreated}
