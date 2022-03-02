@@ -1,0 +1,5 @@
+//Or-ing Wheres
+Where where1 = new Where()
+Where where2 = new Where()
+
+DomainObject.find(Case.class, or(where1, where2))
