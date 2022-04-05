@@ -1,0 +1,148 @@
+<input type='hidden' name="data($widgetId)" value="1"/>
+<table>
+	<tr><td>Axle 1</td><td>Axle 2</td><td>Axle 3</td><td>Axle 4</td><td>Axle 5</td><td>Axle 6</td></tr>
+	<tr>
+		<td><input name='data(cfA1Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A1 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA2Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A2 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA3Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A3 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA4Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A4 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA5Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A5 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA6Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A6 Actual' style='width:100px;'></input></td>
+    </tr>
+    <tr>
+		<td><input name='data(cfA1Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A1 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA2Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A2 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA3Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A3 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA4Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A4 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA5Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A5 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA6Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A6 Legal' style='width:100px;'></input></td>
+    </tr>
+    <tr>
+		<td><input name='data(cfA1Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A1 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA2Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A2 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA3Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A3 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA4Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A4 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA5Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A5 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA6Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A6 Over' style='width:100px;'></input></td>
+    </tr>
+    <tr><td> &nbsp </td></tr>
+    <tr><td> &nbsp </td></tr>
+    <tr><td>Axle 7</td><td>Axle 8</td><td>Axle 9</td><td>Axle 10</td><td>Axle 11</td><td>Total</td></tr>
+	<tr>
+		<td><input name='data(cfA7Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A7 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA8Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A8 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA9Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A9 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA10Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A10 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfA11Actual)' oninput='updateTotal()' class='wwainput' type='number' placeholder='A11 Actual' style='width:100px;'></input></td>
+        <td><input name='data(cfTotActual)' readonly class='wwatotal' type='number' placeholder='Actual Total' style='width:100px;'></input></td>
+    </tr>
+    <tr>
+		<td><input name='data(cfA7Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A7 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA8Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A8 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA9Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A9 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA10Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A10 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfA11Legal)' oninput='updateTotal()' class='wwlinput' type='number' placeholder='A11 Legal' style='width:100px;'></input></td>
+        <td><input name='data(cfTotLegal)' readonly class='wwltotal' type='number' placeholder='Legal Total' style='width:100px;'></input></td>
+    </tr>
+    <tr>
+		<td><input name='data(cfA7Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A7 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA8Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A8 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA9Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A9 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA10Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A10 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfA11Over)' oninput='updateTotal()' class='wwoinput' type='number' placeholder='A11 Over' style='width:100px;'></input></td>
+        <td><input name='data(cfTotOver)' readonly class='wwototal' type='number' placeholder='Over Total' style='width:100px;'></input></td>
+    </tr>
+</table>
+
+<script>
+	function updateTotal(){
+		atotalBox = document.getElementsByClassName('wwatotal')[0]
+    	ltotalBox = document.getElementsByClassName('wwltotal')[0]
+    	ototalBox = document.getElementsByClassName('wwototal')[0]
+		atotal = 0
+    	ltotal = 0
+    	ototal = 0
+		ainputs = document.getElementsByClassName('wwainput')
+    	linputs = document.getElementsByClassName('wwlinput')
+    	oinputs = document.getElementsByClassName('wwoinput')
+		for(i=0;i<ainputs.length;i++){
+        	if(!ainputs[i].value.empty()){
+				atotal += parseFloat(ainputs[i].value)
+            }
+		}
+        for(i=0;i<linputs.length;i++){
+        	if(!linputs[i].value.empty()){
+				ltotal += parseFloat(linputs[i].value)
+            }
+		}
+        for(i=0;i<oinputs.length;i++){
+        	if(!oinputs[i].value.empty()){
+				ototal += parseFloat(oinputs[i].value)
+            }
+		}
+        atotalBox.value = atotal
+        ltotalBox.value = ltotal
+        ototalBox.value = ototal
+	}
+    #if($object.id)
+    function setDefaults(){
+    	ainputs = document.getElementsByClassName('wwainput')
+        ainputs[0].value = '$object.cfA1Actual';
+        ainputs[1].value = '$object.cfA2Actual';
+        ainputs[2].value = '$object.cfA3Actual';
+        ainputs[3].value = '$object.cfA4Actual';
+        ainputs[4].value = '$object.cfA5Actual';
+        ainputs[5].value = '$object.cfA6Actual';
+        ainputs[6].value = '$object.cfA7Actual';
+        ainputs[7].value = '$object.cfA8Actual';
+        ainputs[8].value = '$object.cfA9Actual';
+        ainputs[9].value = '$object.cfA10Actual';
+        ainputs[10].value = '$object.cfA11Actual';
+        
+        linputs = document.getElementsByClassName('wwlinput')
+        linputs[0].value = '$object.cfA1Legal';
+        linputs[1].value = '$object.cfA2Legal';
+        linputs[2].value = '$object.cfA3Legal';
+        linputs[3].value = '$object.cfA4Legal';
+        linputs[4].value = '$object.cfA5Legal';
+        linputs[5].value = '$object.cfA6Legal';
+        linputs[6].value = '$object.cfA7Legal';
+        linputs[7].value = '$object.cfA8Legal';
+        linputs[8].value = '$object.cfA9Legal';
+        linputs[9].value = '$object.cfA10Legal';
+        linputs[10].value = '$object.cfA11Legal';
+        
+        oinputs = document.getElementsByClassName('wwoinput')
+        oinputs[0].value = '$object.cfA1Over';
+        oinputs[1].value = '$object.cfA2Over';
+        oinputs[2].value = '$object.cfA3Over';
+        oinputs[3].value = '$object.cfA4Over';
+        oinputs[4].value = '$object.cfA5Over';
+        oinputs[5].value = '$object.cfA6Over';
+        oinputs[6].value = '$object.cfA7Over';
+        oinputs[7].value = '$object.cfA8Over';
+        oinputs[8].value = '$object.cfA9Over';
+        oinputs[9].value = '$object.cfA10Over';
+        oinputs[10].value = '$object.cfA11Over';
+        
+        document.getElementsByClassName('wwatotal')[0].value = '$object.cfTotActual';
+        document.getElementsByClassName('wwltotal')[0].value = '$object.cfTotLegal';
+        document.getElementsByClassName('wwototal')[0].value = '$object.cfTotOver';
+    }
+    setDefaults()
+    #end
+    
+    function restoreWeight(){
+    	#set($params = ['cfA1Actual', 'cfA2Actual', 'cfA3Actual', 'cfA4Actual', 'cfA5Actual', 'cfA6Actual', 'cfA7Actual', 'cfA8Actual', 'cfA9Actual', 'cfA10Actual', 'cfA11Actual', 'cfTotActual', 'cfA1Legal', 'cfA2Legal', 'cfA3Legal', 'cfA4Legal', 'cfA5Legal', 'cfA6Legal', 'cfA7Legal', 'cfA8Legal', 'cfA9Legal', 'cfA10Legal', 'cfA11Legal', 'cfTotLegal', 'cfA1Over', 'cfA2Over', 'cfA3Over', 'cfA4Over', 'cfA5Over', 'cfA6Over', 'cfA7Over', 'cfA8Over', 'cfA9Over', 'cfA10Over', 'cfA11Over', 'cfTotOver'])
+        #foreach($p in $params)
+        	#set($pname = 'data('+$p+')')
+    		#if($request.getParameter($pname).length() > 0)
+            	document.getElementsByName("$pname")[0].value = $request.getParameter($pname)
+        	#end
+        #end
+    }
+    restoreWeight()
+</script>
+
+
+
