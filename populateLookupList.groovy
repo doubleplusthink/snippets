@@ -1,3 +1,5 @@
+//IMPORTANT! Don't use this, use the Lookup List Import functionality
+
 values = [
   "label:code"
 ]
