@@ -13,3 +13,7 @@ adc3-launch.adcolony.com
 events3alt.adcolony.com
 an.facebook.com
 static.media.net
+ads-api.tiktok.com
+ads.tiktok.com
+ads-sg.tiktok.com
+business-api.tiktok.com
