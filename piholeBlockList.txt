@@ -1,0 +1,15 @@
+stats.g.doubleclick.net
+ad.doubleclick.net
+static.doubleclick.net
+m.doubleclick.net
+mediavisor.doubleclick.net
+pagead2.googleadservices.com
+pagead2.googlesyndication.com
+afs.googlesyndication.com
+adservice.google.com
+wd.adcolony.com
+ads30.adcolony.com
+adc3-launch.adcolony.com
+events3alt.adcolony.com
+an.facebook.com
+static.media.net
