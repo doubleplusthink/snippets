@@ -45,62 +45,62 @@ Session session = Session.getInstance(props)
 Transport transport = null
 
 try {
-    println "========================================"
-    println "SMTP Connection Test"
-    println "Host      : $host"
-    println "Port      : $port"
-    println "STARTTLS  : $useSTARTTLS"
-    println "SSL       : $useSSL"
-    println "Auth      : $useAuth"
-    println "========================================"
-    println ""
+    logger.debug "========================================"
+    logger.debug "SMTP Connection Test"
+    logger.debug "Host      : $host"
+    logger.debug "Port      : $port"
+    logger.debug "STARTTLS  : $useSTARTTLS"
+    logger.debug "SSL       : $useSSL"
+    logger.debug "Auth      : $useAuth"
+    logger.debug "========================================"
+    logger.debug ""
 
     transport = session.getTransport("smtp")
 
     if (useAuth) {
-        println "Connecting with authentication..."
+        logger.debug "Connecting with authentication..."
         transport.connect(host, port, username, password)
     } else {
-        println "Connecting without authentication..."
+        logger.debug "Connecting without authentication..."
         transport.connect()
     }
 
-    println ""
-    println "SUCCESS!"
-    println "Successfully connected to SMTP server."
+    logger.debug ""
+    logger.debug "SUCCESS!"
+    logger.debug "Successfully connected to SMTP server."
 
 } catch (MessagingException e) {
 
-    println ""
-    println "FAILED!"
-    println "Exception: ${e.class.name}"
-    println "Message  : ${e.message}"
+    logger.debug ""
+    logger.debug "FAILED!"
+    logger.debug "Exception: ${e.class.name}"
+    logger.debug "Message  : ${e.message}"
 
-    println ""
-    println "Exception chain:"
+    logger.debug ""
+    logger.debug "Exception chain:"
     Throwable t = e
     while (t != null) {
-        println "----------------------------------------"
-        println t.class.name
-        println t.message
+        logger.debug "----------------------------------------"
+        logger.debug t.class.name
+        logger.debug t.message
         t = t.cause
     }
 
-    println ""
-    println "Stack trace:"
+    logger.debug ""
+    logger.debug "Stack trace:"
     e.printStackTrace(System.out)
 
 } catch (Exception e) {
 
-    println ""
-    println "Unexpected exception:"
+    logger.debug ""
+    logger.debug "Unexpected exception:"
     e.printStackTrace(System.out)
 
 } finally {
 
     if (transport?.isConnected()) {
         transport.close()
-        println ""
-        println "Connection closed."
+        logger.debug ""
+        logger.debug "Connection closed."
     }
 }
